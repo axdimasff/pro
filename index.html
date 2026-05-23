@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betyetu MZ - Bónus Exclusivo</title>
+    <title>Betyetu MZ - Bónus Aviator</title>
     <style>
         :root {
             --primary: #8a2be2;
@@ -42,8 +42,8 @@
         }
 
         .logo-area h1 {
-            font-size: 2.2rem;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
+            font-size: 2.1rem;
+            background: linear-gradient(to right, var(--secondary), #ff003c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin: 0;
@@ -120,7 +120,7 @@
         .steps {
             text-align: left;
             margin: 25px 0;
-            opacity: 0.4; /* Fica meio apagado até o gajo validar o número */
+            opacity: 0.3; 
             transition: 0.5s;
             pointer-events: none;
         }
@@ -160,7 +160,7 @@
             justify-content: center;
             margin: 25px 0;
             width: 100%;
-            display: none; /* Só aparece após validar o número */
+            display: none; 
         }
 
         .btn-wrapper {
@@ -181,7 +181,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: conic-gradient(transparent, var(--secondary), var(--primary), transparent 40%);
+            background: conic-gradient(transparent, var(--secondary), var(--aviator), transparent 40%);
             animation: rotate 3s linear infinite;
             z-index: -2;
         }
@@ -189,7 +189,7 @@
         .btn-download {
             display: block;
             padding: 18px 20px;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            background: linear-gradient(45deg, var(--aviator), var(--primary));
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -215,7 +215,6 @@
             display: none;
         }
 
-        /* --- PROVA SOCIAL AO VIVO --- */
         .live-payouts {
             background: rgba(0, 0, 0, 0.4);
             border-radius: 12px;
@@ -243,8 +242,8 @@
 
 <div class="container">
     <div class="logo-area">
-        <h1>Parabéns! Ganhou 21000MT</h1>
-        <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 10px;">Ative o seu bónus exclusivo para levantamento via M-Pesa ou Emola.</p>
+        <h1>Ganhou 21000MT de Bónus no Aviator!</h1>
+        <p style="opacity: 0.8; font-size: 0.95rem; margin-top: 10px;">Siga as instruções abaixo para validar o bónus no seu número e levantar via M-Pesa ou Emola.</p>
     </div>
 
     <div class="countdown-container">
@@ -261,34 +260,34 @@
     <div class="steps" id="instructionSteps">
         <div class="step-item">
             <div class="step-num">1</div>
-            <div><strong>Criar Nova Conta:</strong> Clique no botão abaixo e abra a sua nova conta oficial.</div>
+            <div><strong>Criar Nova Conta:</strong> Clique no botão abaixo para abrir a sua nova conta oficial.</div>
         </div>
         <div class="step-item">
             <div class="step-num">2</div>
-            <div><strong>Deposita e Ativa:</strong> Faça um único depósito de 3500MT para ativar o sistema de bónus no seu número.</div>
+            <div><strong>Deposita e Ativa:</strong> Faça um depósito a partir de 100MT para ativar o sistema de bónus no seu saldo.</div>
         </div>
         <div class="step-item">
             <div class="step-num">3</div>
-            <div><strong>Aposta Única:</strong> Faça uma jogada no Aviator com os 3500MT e retire no multiplicador de 6x.</div>
+            <div><strong>Jogue Aviator:</strong> Abra o jogo Aviator, coloque o valor que deseja apostar e retire quando o avião subir de 2x a 5x para multiplicar os seus ganhos.</div>
         </div>
         <div class="step-item">
             <div class="step-num">4</div>
-            <div><strong>Receba os 21000MT:</strong> O saldo de 21000MT será injetado instantaneamente na sua conta para saque.</div>
+            <div><strong>Levantamento Imediato:</strong> Assim que faturar, pode retirar todos os seus lucros e o bónus diretamente para a sua carteira móvel.</div>
         </div>
     </div>
 
     <div class="btn-container" id="btnContainer">
         <div class="btn-wrapper">
-            <a href="https://betyetu.co.mz/?afid=PGA2EK&cid=27&chid=23" class="btn-download">🚀 ATIVAR BÓNUS AGORA</a>
+            <a href="https://betyetu.co.mz/?afid=PGA2EK&cid=27&chid=23" class="btn-download">🚀 JOGAR AVIATOR AGORA</a>
         </div>
     </div>
 
     <div class="final-warning" id="warningBox">
-        ⚠️ <b>REQUISITO OBRIGATÓRIO:</b> Os 21000MT são liberados apenas para novas contas que efetuarem o depósito exato de 3500MT e realizarem a jogada estratégica descrita no passo 3.
+        ⚠️ <b>REQUISITO:</b> O bónus de 21000MT no Aviator é exclusivo para novas contas criadas hoje através desta página que efetuarem a ativação com o depósito mínimo de 100MT.
     </div>
 
     <div class="live-payouts">
-        <div style="font-weight: bold; margin-bottom: 5px; color:#fff;">🔴 Levantamentos Recentes de Bónus:</div>
+        <div style="font-weight: bold; margin-bottom: 5px; color:#fff;">🔴 Levantamentos Recentes do Bónus Aviator:</div>
         <div id="payout-list">
             <div class="payout-row"><span>843***421</span> <span>21,000.00MT via M-Pesa</span></div>
             <div class="payout-row"><span>852***901</span> <span>21,000.00MT via Emola</span></div>
@@ -310,7 +309,7 @@
         }, 1000);
     }
 
-    // SIMULAÇÃO DA VALIDAÇÃO DO BÓNUS
+    // VALIDAÇÃO DO NÚMERO
     function validateBonus() {
         var phone = document.getElementById('phone').value;
         var status = document.getElementById('status');
@@ -324,24 +323,23 @@
 
         status.style.display = 'block';
         status.style.color = 'var(--secondary)';
-        status.innerHTML = '🔄 A verificar base de dados da Betyetu...';
+        status.innerHTML = '🔄 A verificar bónus do Aviator na Betyetu...';
 
         setTimeout(function() {
             status.style.color = 'var(--success)';
-            status.innerHTML = '✅ PARABÉNS! Bónus de 21000MT reservado para o número ' + phone + '! Siga os passos abaixo imediatamente.';
+            status.innerHTML = '✅ ATIVADO! Bónus de 21000MT libertado para o número ' + phone + '! Siga os passos abaixo.';
             
-            // Liberta os passos ocultos e botões de ação
             document.getElementById('instructionSteps').classList.add('active');
             document.getElementById('btnContainer').style.display = 'block';
             document.getElementById('warningBox').style.display = 'block';
             document.getElementById('step0').style.border = '2px solid var(--success)';
-        }, 1800);
+        }, 1600);
     }
 
-    // SIMULAÇÃO DE LEVANTAMENTOS EM TEMPO REAL
+    // PROVA SOCIAL EM TEMPO REAL
     function livePayouts() {
         var list = document.getElementById('payout-list');
-        var prefixes = ['84', '85', '82', '87'];
+        var prefixes = ['84', '85', '82', '86', '87'];
         setInterval(function() {
             var randPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
             var randNum1 = Math.floor(100 + Math.random() * 900);
@@ -356,7 +354,7 @@
             if(list.children.length > 3) {
                 list.removeChild(list.lastChild);
             }
-        }, 4000);
+        }, 4500);
     }
 
     window.onload = function () {
